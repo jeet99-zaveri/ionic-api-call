@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Student Marks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-list *ngFor="let student of students" [routerLink]="['/',student.id]" >
+        <ion-item>{{student.id}}</ion-item>
+     </ion-list>
+       
+    </ion-list>
+</ion-content>
